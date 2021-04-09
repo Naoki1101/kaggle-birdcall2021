@@ -7,7 +7,6 @@ import warnings
 
 import pandas as pd
 from pathlib import Path
-import torch
 
 from .trainer import NNTrainer
 from .factory import get_fold, get_drop_idx
@@ -97,6 +96,19 @@ def main():
         run_name_cv = f"{run_name}_{cv:.3f}"
         logger_path.rename(const.LOG_DIR / run_name_cv)
         logging.disable(logging.FATAL)
+
+    with t.timer("notify"):
+        process_minutes = t.get_processing_time()
+        notificator = Notificator(
+            run_name=run_name_cv,
+            model_name=cfg.model.name,
+            cv=round(cv, 4),
+            process_time=round(process_minutes, 2),
+            comment=comment,
+            params=notify_params,
+        )
+        notificator.send_line()
+        notificator.send_notion()
 
 
 if __name__ == "__main__":
