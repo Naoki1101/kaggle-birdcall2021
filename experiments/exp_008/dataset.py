@@ -141,7 +141,7 @@ class CustomTrainDataset(Dataset):
 
         if self.cfg.noise:
             rand = np.random.rand()
-            m = np.random.randint(1, 10)
+            m = np.random.rand() * 10
 
             for noise_name in self.cfg.noise:
                 noise_threshhold = getattr(self.cfg.noise, noise_name)
