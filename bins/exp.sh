@@ -9,4 +9,6 @@ cd ../
 # python -m experiments.exp_006 -m -c "train only first 80% audio"
 # python -m experiments.exp_007 -m -c "add rain noise"   # 後回し
 # python -m experiments.exp_008 -m -c "add post-process"   # これ回す必要なくないかw？
-python -m experiments.exp_009 -m -c "add bus noise"   # 後回し
+# python -m experiments.exp_009 -m -c "add bus noise"
+# python -m experiments.exp_010 -m -c "efficientnet_b0"
+python -m experiments.exp_011 -m -c "efficientnet_b3"
