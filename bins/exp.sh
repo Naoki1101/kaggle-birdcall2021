@@ -12,4 +12,5 @@ cd ../
 # python -m experiments.exp_009 -m -c "add bus noise"
 # python -m experiments.exp_010 -m -c "efficientnet_b0"
 # python -m experiments.exp_011 -m -c "efficientnet_b3"
-python -m experiments.exp_012 -m -c "train only first 5[sec] and last 5[sec]"
+# python -m experiments.exp_012 -m -c "train only first 5[sec] and last 5[sec]"
+python -m experiments.exp_013 -m -c "3tta random shift 2.5[sec]"
