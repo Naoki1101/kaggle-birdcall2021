@@ -1,0 +1,8 @@
+notion
+dropbox
+fastprogress
+PyYAML
+kaggle
+GitPython
+rfconv
+iterative-stratification
