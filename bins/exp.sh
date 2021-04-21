@@ -20,5 +20,6 @@ cd ../
 # python -m experiments.exp_017 -m -c "resnest50d_4s2x40d"
 # python -m experiments.exp_018 -m -c "legacy_seresnext50_32x4d, nocall noise: 0.5 ~ 1.01"
 # python -m experiments.exp_019 -m -c "legacy_seresnext50_32x4d, nocall noise: 0.25 ~ 1.01"
-# python -m experiments.exp_020 -m -c "use latitude, longitude"
-python -m experiments.exp_021 -m -c "use latitude, longitude, modified"
+# python -m experiments.exp_020 -m -c "use latitude and longitude"
+# python -m experiments.exp_021 -m -c "use latitude and longitude, modified"
+python -m experiments.exp_022 -m -c "use latitude and longitude, drop non_test_birds_idx"
