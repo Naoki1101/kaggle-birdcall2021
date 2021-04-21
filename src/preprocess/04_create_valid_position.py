@@ -30,7 +30,7 @@ def main():
 
         position_dict[audio_id] = audio_position_dict
 
-    dh.save(const.INPUT_DATA_DIR / "valid_position.json", position_dict)
+    dh.save(const.PROCESSED_DATA_DIR / "valid_position.json", position_dict)
 
 
 if __name__ == "__main__":

@@ -66,7 +66,7 @@ def main():
             "resampled_filename",
             "resampled_channels",
         ]
-    ].to_csv(const.INPUT_DATA_DIR / "train_mod.csv", index=False)
+    ].to_csv(const.PROCESSED_DATA_DIR / "train_mod.csv", index=False)
 
 
 if __name__ == "__main__":

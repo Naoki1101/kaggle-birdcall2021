@@ -3,12 +3,12 @@ from pathlib import Path
 DATA_DIR = Path("./data")
 INPUT_DATA_DIR = DATA_DIR / "input"
 TRAIN_AUDIO_DIR = INPUT_DATA_DIR / "train_short_audio"
-TRAIN_RESAMPLED_AUDIO_DIR = INPUT_DATA_DIR / "train_short_resampled_audio"
 TRAIN_SOUNDSCAPES_DIR = INPUT_DATA_DIR / "train_soundscapes"
 TEST_AUDIO_DIR = INPUT_DATA_DIR / "test_soundscapes"
-NOISE_AUDIO_DIR = INPUT_DATA_DIR / "noise"
 OUTPUT_DATA_DIR = DATA_DIR / "output"
 PROCESSED_DATA_DIR = DATA_DIR / "processed"
+NOISE_AUDIO_DIR = PROCESSED_DATA_DIR / "noise"
+TRAIN_RESAMPLED_AUDIO_DIR = PROCESSED_DATA_DIR / "train_short_resampled_audio"
 FEATURE_DIR = DATA_DIR / "features"
 
 FREESOUND_DIR = DATA_DIR / "freesound"
