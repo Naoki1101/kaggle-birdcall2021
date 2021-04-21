@@ -445,3 +445,19 @@ TRAIN_SOUNDSCAPES_CODE = {
     "18003_COR": "18003_COR_20190904.ogg",
     "50878_COR": "50878_COR_20191004.ogg",
 }
+
+POS_DICT = {
+    "COR": {
+        "latitude": 10.12,
+        "longitude": -84.51,
+    },
+    "COL": {
+        "latitude": 5.57,
+        "longitude": -75.85,
+    },
+    "SNE": {
+        "latitude": 38.49,
+        "longitude": -119.95,
+    },
+    "SSW": {"latitude": 42.47, "longitude": -76.45},
+}
