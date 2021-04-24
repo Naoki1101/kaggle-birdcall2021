@@ -22,4 +22,7 @@ cd ../
 # python -m experiments.exp_019 -m -c "legacy_seresnext50_32x4d, nocall noise: 0.25 ~ 1.01"
 # python -m experiments.exp_020 -m -c "use latitude and longitude"
 # python -m experiments.exp_021 -m -c "use latitude and longitude, modified"
-python -m experiments.exp_022 -m -c "use latitude and longitude, drop non_test_birds_idx"
+# python -m experiments.exp_022 -m -c "use latitude and longitude, drop non_test_birds_idx"
+# python -m experiments.exp_023 -m -c "use latitude and longitude, drop non_test_region_idx"
+# python -m experiments.exp_024 -m -c "use distance from mean position"
+python -m experiments.exp_025 -m -c "use distance from min position"

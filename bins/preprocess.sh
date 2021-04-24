@@ -6,4 +6,6 @@ cd ../
 # python src/preprocess/03_extract_freesound_noise.py
 # python src/preprocess/04_create_valid_position.py
 # python src/preprocess/05_extract_non_test_region_birds.py
-python src/preprocess/06_extract_non_test_region.py
+# python src/preprocess/06_extract_non_test_region.py
+# python src/preprocess/07_calculate_distance_from_mean_position.py
+python src/preprocess/08_calculate_distance_from_min_position.py
