@@ -7,8 +7,8 @@ cd ../
 # python -m experiments.exp_004 -m -c "use secondary_labels"
 # python -m experiments.exp_005 -m -c "mixup"
 # python -m experiments.exp_006 -m -c "train only first 80% audio"
-# python -m experiments.exp_007 -m -c "add rain noise"   # 後回し
-# python -m experiments.exp_008 -m -c "add post-process"   # これ回す必要なくないかw？
+# python -m experiments.exp_007 -m -c "add rain noise"
+# python -m experiments.exp_008 -m -c "add post-process"
 # python -m experiments.exp_009 -m -c "add bus noise"
 # python -m experiments.exp_010 -m -c "efficientnet_b0"
 # python -m experiments.exp_011 -m -c "efficientnet_b3"
@@ -25,4 +25,9 @@ cd ../
 # python -m experiments.exp_022 -m -c "use latitude and longitude, drop non_test_birds_idx"
 # python -m experiments.exp_023 -m -c "use latitude and longitude, drop non_test_region_idx"
 # python -m experiments.exp_024 -m -c "use distance from mean position"
-python -m experiments.exp_025 -m -c "use distance from min position"
+# python -m experiments.exp_025 -m -c "use distance from min position"
+# python -m experiments.exp_026 -m -c "use audiomentations"
+# python -m experiments.exp_027 -m -c "bus_noise and Gain"
+# python -m experiments.exp_028 -m -c "torchlibrosa"
+python -m experiments.exp_029 -m -c "AddGaussianNoise"
+python -m experiments.exp_030 -m -c "AddGaussianNoise, add bus noise"
