@@ -32,4 +32,6 @@ cd ../
 # python -m experiments.exp_029 -m -c "AddGaussianNoise"
 # python -m experiments.exp_030 -m -c "AddGaussianNoise, add bus noise"
 # python -m experiments.exp_031 -m -c "densenet121"
-python -m experiments.exp_032 -m -c "remove SpecAugmentation"
+# python -m experiments.exp_032 -m -c "remove SpecAugmentation"
+python -m experiments.exp_033 -m -c "remove Gain"
+python -m experiments.exp_034 -m -c "remove water noise"
