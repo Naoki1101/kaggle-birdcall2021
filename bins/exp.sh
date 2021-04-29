@@ -40,4 +40,6 @@ cd ../
 # python -m experiments.exp_037 -m -c "efficientnet_b3"
 # python -m experiments.exp_038 -m -c "SmoothBCEwLogits, smoothing=0.1"
 # python -m experiments.exp_039 -m -c "SGD"
-python -m experiments.exp_040 -m -c "seresnext50_32x4d"
+# python -m experiments.exp_040 -m -c "seresnext50_32x4d"
+# python -m experiments.exp_041 -m -c "seresnext50_32x4d, AddGaussianSNR"
+python -m experiments.exp_042 -m -c "seresnext50_32x4d, AddGaussianSNR, modified_mixup"

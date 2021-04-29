@@ -48,6 +48,10 @@ data:
             batch_size: 64
             num_workers: 4
         transforms:
+            gsnr:
+                name: AddGaussianSNR
+                params:
+                    p: 0.5
         noise:
             nocall:
                 - 0.50
