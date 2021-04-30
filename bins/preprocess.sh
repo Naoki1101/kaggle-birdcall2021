@@ -9,3 +9,4 @@ cd ../
 # python src/preprocess/06_extract_non_test_region.py
 # python src/preprocess/07_calculate_distance_from_mean_position.py
 # python src/preprocess/08_calculate_distance_from_min_position.py
+python src/preprocess/09_drop_low_rating.py

@@ -42,4 +42,7 @@ cd ../
 # python -m experiments.exp_039 -m -c "SGD"
 # python -m experiments.exp_040 -m -c "seresnext50_32x4d"
 # python -m experiments.exp_041 -m -c "seresnext50_32x4d, AddGaussianSNR"
-python -m experiments.exp_042 -m -c "seresnext50_32x4d, AddGaussianSNR, modified_mixup"
+# python -m experiments.exp_042 -m -c "seresnext50_32x4d, AddGaussianSNR, modified_mixup"
+# python -m experiments.exp_043 -m -c "seresnext50_32x4d, Gain, AddGaussianSNR, modified_mixup"
+# python -m experiments.exp_044 -m -c "seresnext50_32x4d, Gain, AddGaussianSNR, modified_mixup, epoch=90"
+python -m experiments.exp_045 -m -c "seresnext50_32x4d, Gain, AddGaussianSNR, modified_mixup, drop low_rating"
