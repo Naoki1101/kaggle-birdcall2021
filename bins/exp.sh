@@ -51,5 +51,9 @@ cd ../
 # python -m experiments.exp_047 -m -c "modified exp_045"
 # python -m experiments.exp_048 -m -c "noise louder"
 # python -m experiments.exp_049 -m -c "copy exp_043, remove train_noise"
-python -m experiments.exp_050 -m -c "copy exp_043, last 5s"
-python -m experiments.exp_051 -m -c "copy exp_043, add Shift"
+# python -m experiments.exp_050 -m -c "copy exp_043, last 5s"
+# python -m experiments.exp_051 -m -c "copy exp_043, add Shift"
+# python -m experiments.exp_052 -m -c "copy exp_043, add Normalize"
+# python -m experiments.exp_053 -m -c "copy exp_043, mixup r < 0.8"
+python -m experiments.exp_054 -m -c "copy exp_043, add non_north_america_idx"   # for SSW and SNE
+python -m experiments.exp_055 -m -c "copy exp_043, add non_south_america_idx"   # for COR and COL
