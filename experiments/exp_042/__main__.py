@@ -75,6 +75,8 @@ def main():
         target_df = whole_target_df.iloc[: len(train_df)]
         valid_target_df = whole_target_df.iloc[len(train_df) :].reset_index(drop=True)
 
+        print(target_df.shape)
+
     with t.timer("drop rows"):
         if cfg.drop is not None:
             drop_idx = get_drop_idx(cfg.drop)
