@@ -1,0 +1,121 @@
+seed: &seed 2021
+metrics:
+    name: auc
+    params: {}
+drop:
+kaggle:
+    submit: False
+epochs: &epochs 30
+threshold: 0.7
+
+model:
+    n_classes: &class 1
+    backbone: seresnext50_32x4d
+    in_channels: 1
+    params:
+        pooling_name: GeM
+        args_pooling: {}
+    spec_params:
+        durations: 5
+        sampling_rate: 32_000
+        n_fft: 2048
+        hop_length: 512
+        n_mels: 128
+        fmin: 20
+        fmax: 16_000
+        power: 2.0
+
+validation:
+    name: StratifiedKFold
+    params:
+        n_splits: 5
+        random_state: *seed
+        shuffle: True
+    split:
+        y: primary_label
+        groups:
+    weight: average
+    single: True
+
+data:
+    train:
+        dataset: train
+        img_size:
+            width: &wsize 224
+            height: &hsize 547
+        loader:
+            shuffle: True
+            batch_size: 64
+            num_workers: 4
+        transforms:
+            gain:
+                name: Gain
+                params:
+                    p: 0.3
+            gsnr:
+                name: AddGaussianSNR
+                params:
+                    p: 0.5
+            shift:
+                name: Shift
+                params:
+                    p: 0.5
+        noise:
+            water:
+                - 0.0
+                - 0.3
+            bus:
+                - 0.3
+                - 0.5
+            walk:
+                - 0.5
+                - 0.7
+            rain:
+                - 0.7
+                - 0.85
+            motorcycle:
+                - 0.85
+                - 1.01
+        shift: True
+        mixup: False
+    valid:
+        dataset: valid
+        img_size:
+            width: *wsize
+            height: *hsize
+        loader:
+            shuffle: False
+            batch_size: 64
+            num_workers: 4
+        transforms:
+        noise:
+        shift: False
+        tta:
+            iter_num: 1
+    test:
+        img_size:
+            width: *wsize
+            height: *hsize
+        loader:
+            shuffle: False
+            batch_size: 16
+            num_workers: 4
+        transforms:
+        noise:
+        shift: False
+        tta:
+            iter_num: 1
+
+loss: 
+    name: BCEWithLogitsLoss
+    params: {}
+
+optimizer:
+    name: Adam
+    params:
+        lr: 0.001
+
+scheduler:
+    name: CosineAnnealingLR
+    params:
+        T_max: *epochs

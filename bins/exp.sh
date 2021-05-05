@@ -55,5 +55,9 @@ cd ../
 # python -m experiments.exp_051 -m -c "copy exp_043, add Shift"
 # python -m experiments.exp_052 -m -c "copy exp_043, add Normalize"
 # python -m experiments.exp_053 -m -c "copy exp_043, mixup r < 0.8"
-python -m experiments.exp_054 -m -c "copy exp_043, add non_north_america_idx"   # for SSW and SNE
-python -m experiments.exp_055 -m -c "copy exp_043, add non_south_america_idx"   # for COR and COL
+# python -m experiments.exp_054 -m -c "copy exp_043, add non_north_america_idx"   # for SSW and SNE
+# python -m experiments.exp_055 -m -c "copy exp_043, add non_south_america_idx"   # for COR and COL
+# python -m experiments.exp_056 -m -c "copy exp_043, efficientnet_b3, add COR, SSW score"
+# python -m experiments.exp_057 -m -c "copy exp_043, efficientnet_b0, add COR, SSW score"
+# python -m experiments.exp_058 -m -c "copy exp_043, use CustomLogmelFilterBank"
+python -m experiments.exp_059 -m -c "copy exp_043, nocall classfication"

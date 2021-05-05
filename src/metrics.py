@@ -35,3 +35,7 @@ def micro_f1_similarity(y_true: str, y_pred: str) -> float:
     f1_similarity = 2 * true_pos / (2 * true_pos + false_neg + false_pos)
 
     return f1_similarity
+
+
+def auc(y_true, y_pred):
+    return metrics.roc_auc_score(y_true, y_pred)
