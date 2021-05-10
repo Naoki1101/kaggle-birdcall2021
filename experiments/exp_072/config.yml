@@ -22,7 +22,7 @@ model:
         hop_length: 512
         n_mels: 128
         fmin: 20
-        fmax: 16_000
+        fmax: 8_000
         power: 2.0
 
 validation:
@@ -57,10 +57,10 @@ data:
                 params:
                     p: 0.5
         noise:
-            water:
+            nocall:
                 - 0.50
                 - 0.75
-            pink:
+            water:
                 - 0.75
                 - 1.01
         shift: True

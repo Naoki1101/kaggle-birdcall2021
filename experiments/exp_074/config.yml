@@ -35,7 +35,7 @@ validation:
         y: primary_label
         groups:
     weight: average
-    single: True
+    single: False
 
 data:
     train:
@@ -57,11 +57,11 @@ data:
                 params:
                     p: 0.5
         noise:
-            water:
+            nocall:
                 - 0.50
                 - 0.75
-            pink:
-                - 0.75
+            water:
+                - 0.50
                 - 1.01
         shift: True
         mixup: True

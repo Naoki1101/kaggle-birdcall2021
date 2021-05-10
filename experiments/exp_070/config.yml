@@ -1,6 +1,6 @@
 seed: &seed 2021
 metrics:
-    name: row_wise_micro_averaged_f1_score
+    name: auc
     params: {}
 drop:
 kaggle:
@@ -9,7 +9,7 @@ epochs: &epochs 30
 threshold: 0.7
 
 model:
-    n_classes: &class 397
+    n_classes: &class 1
     backbone: seresnext50_32x4d
     in_channels: 1
     params:
@@ -57,14 +57,14 @@ data:
                 params:
                     p: 0.5
         noise:
-            water:
-                - 0.50
-                - 0.75
+            nocall:
+                - 0.0
+                - 0.5
             pink:
-                - 0.75
+                - 0.5
                 - 1.01
         shift: True
-        mixup: True
+        mixup: False
     valid:
         dataset: valid
         img_size:

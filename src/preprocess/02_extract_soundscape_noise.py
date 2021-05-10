@@ -30,6 +30,7 @@ def main():
     df = pd.read_csv(const.INPUT_DATA_DIR / "train_soundscape_labels.csv")
     df["file_id"] = df["audio_id"].astype(str) + "_" + df["site"]
     df["file_name"] = df["file_id"].map(const.TRAIN_SOUNDSCAPES_CODE)
+    df = df[df["audio_id"].isin([7019, 7954, 14473])].reset_index(drop=True)
 
     all_noise_list = []
     file_gp = df.groupby("file_name")

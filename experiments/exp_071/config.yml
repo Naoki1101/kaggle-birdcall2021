@@ -19,7 +19,7 @@ model:
         durations: 5
         sampling_rate: 32_000
         n_fft: 2048
-        hop_length: 512
+        hop_length: 256
         n_mels: 128
         fmin: 20
         fmax: 16_000
@@ -57,10 +57,10 @@ data:
                 params:
                     p: 0.5
         noise:
-            water:
+            nocall:
                 - 0.50
                 - 0.75
-            pink:
+            water:
                 - 0.75
                 - 1.01
         shift: True
