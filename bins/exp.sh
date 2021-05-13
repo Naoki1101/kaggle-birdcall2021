@@ -84,4 +84,9 @@ cd ../
 # python -m experiments.exp_080 -m -c "copy exp_079, nocall & pink & water & motorcycle noise"
 # python -m experiments.exp_081 -m -c "copy exp_073, fmin=20, noise coef ~ 50"
 # python -m experiments.exp_082 -m -c "copy exp_081, noise coef ~ 100"
-python -m experiments.exp_083 -m -c "copy exp_079, noise coef ~ 50"
+# python -m experiments.exp_083 -m -c "copy exp_079, noise coef ~ 50"
+# python -m experiments.exp_084 -m -c "copy exp_079, noise coef ~ 10, remove Gain, add water noise"
+# python -m experiments.exp_085 -m -c "copy exp_081, PitchShift"   # 時間かかるからskip
+# python -m experiments.exp_086 -m -c "copy exp_081, resnet101d"
+# python -m experiments.exp_087 -m -c "copy exp_081, 3mixup"
+# python -m experiments.exp_088 -m -c "copy exp_081, Normalize"
