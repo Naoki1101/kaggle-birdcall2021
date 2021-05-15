@@ -90,3 +90,12 @@ cd ../
 # python -m experiments.exp_086 -m -c "copy exp_081, resnet101d"
 # python -m experiments.exp_087 -m -c "copy exp_081, 3mixup"
 # python -m experiments.exp_088 -m -c "copy exp_081, Normalize"
+# python -m experiments.exp_089 -m -c "copy exp_081, resnext50_32x4d"
+# python -m experiments.exp_090 -m -c "copy exp_081, coef ~ 10, train first 5[sec] and last 5[sec]"
+# python -m experiments.exp_091 -m -c "copy exp_081, coef ~ 10, nocall&speaking noise"
+# python -m experiments.exp_092 -m -c "copy exp_091, r >= 0.9 then y = 0 ~ 5[sec] + 5 ~ 10[sec]"
+# python -m experiments.exp_093 -m -c "copy exp_092, nocall&crowd noise"
+# python -m experiments.exp_094 -m -c "copy exp_092, nfnet_f0"   # 途中でエラーになるからとりあえずskipした
+# python -m experiments.exp_095 -m -c "copy exp_093, crowd noise -> contains crowd noise"
+python -m experiments.exp_096 -m -c "copy exp_092, r >= 0.7 then y = 0 ~ 5[sec] + 5 ~ 10[sec]"
+python -m experiments.exp_097 -m -c "copy exp_092, only random noise"
