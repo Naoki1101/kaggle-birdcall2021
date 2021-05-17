@@ -97,5 +97,10 @@ cd ../
 # python -m experiments.exp_093 -m -c "copy exp_092, nocall&crowd noise"
 # python -m experiments.exp_094 -m -c "copy exp_092, nfnet_f0"   # 途中でエラーになるからとりあえずskipした
 # python -m experiments.exp_095 -m -c "copy exp_093, crowd noise -> contains crowd noise"
-python -m experiments.exp_096 -m -c "copy exp_092, r >= 0.7 then y = 0 ~ 5[sec] + 5 ~ 10[sec]"
-python -m experiments.exp_097 -m -c "copy exp_092, only random noise"
+# python -m experiments.exp_096 -m -c "copy exp_092, r >= 0.7 then y = 0 ~ 5[sec] + 5 ~ 10[sec]"
+# python -m experiments.exp_097 -m -c "copy exp_092, only random noise"
+# python -m experiments.exp_098 -m -c "copy exp_097, remove bn0"
+# python -m experiments.exp_099 -m -c "copy exp_079, only random noise"
+# python -m experiments.exp_100 -m -c "copy exp_097, Shift, AddGaussianSNR=1.0"
+# python -m experiments.exp_101 -m -c "copy exp_100, Shift, AddGaussianSNR=0.5"
+python -m experiments.exp_102 -m -c "copy exp_004, librosa, Gain, AddGaussianSNR, random noise, mixup"
