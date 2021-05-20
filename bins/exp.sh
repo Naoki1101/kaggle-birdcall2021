@@ -103,4 +103,27 @@ cd ../
 # python -m experiments.exp_099 -m -c "copy exp_079, only random noise"
 # python -m experiments.exp_100 -m -c "copy exp_097, Shift, AddGaussianSNR=1.0"
 # python -m experiments.exp_101 -m -c "copy exp_100, Shift, AddGaussianSNR=0.5"
-python -m experiments.exp_102 -m -c "copy exp_004, librosa, Gain, AddGaussianSNR, random noise, mixup"
+# python -m experiments.exp_102 -m -c "copy exp_004, librosa, Gain, AddGaussianSNR, random noise, mixup"
+# python -m experiments.exp_103 -m -c "copy exp_091, nocall&speaking&water noise"
+# python -m experiments.exp_104 -m -c "copy exp_097, top_db=80.0"
+# python -m experiments.exp_105 -m -c "copy exp_104, n_mels=256"
+# python -m experiments.exp_106 -m -c "copy exp_104, BCEFocalLoss"
+# python -m experiments.exp_107 -m -c "copy exp_105, resize(224, 224), PReLU"
+# python -m experiments.exp_108 -m -c "copy exp_104, n_fft=4096"
+# python -m experiments.exp_109 -m -c "copy exp_104, SpecAugmentation"
+# python -m experiments.exp_110 -m -c "copy exp_097, n_fft=4096, Shift, tob_db=None"
+# python -m experiments.exp_111 -m -c "copy exp_110, snr"
+# python -m experiments.exp_112 -m -c "copy exp_111, pink&water&speaking noise"
+python -m experiments.exp_113 -m -c "copy exp_112, epochs=60, T_max=20"
+
+
+# Final model
+# resnext50_32x4d, 5s
+# resnext50_32x4d, 5s, mixup
+# b0, 5s
+# b0, 5s, mixup
+# b3, 5s
+# b3, 5s, mixup
+# resnext50_32x4d, 7s, mixup
+# b0, 7s, mixup
+# b1, 7s, mixup
