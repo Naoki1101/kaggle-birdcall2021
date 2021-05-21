@@ -114,16 +114,25 @@ cd ../
 # python -m experiments.exp_110 -m -c "copy exp_097, n_fft=4096, Shift, tob_db=None"
 # python -m experiments.exp_111 -m -c "copy exp_110, snr"
 # python -m experiments.exp_112 -m -c "copy exp_111, pink&water&speaking noise"
-python -m experiments.exp_113 -m -c "copy exp_112, epochs=60, T_max=20"
+# python -m experiments.exp_113 -m -c "copy exp_112, epochs=60, T_max=20"
+python -m experiments.exp_114 -m -c "copy exp_112, 7sec"
+python -m experiments.exp_115 -m -c "copy exp_112, efficientnet_b0"
+python -m experiments.exp_116 -m -c "copy exp_114, efficientnet_b0"
+python -m experiments.exp_117 -m -c "copy exp_112, efficientnet_b3"
+python -m experiments.exp_118 -m -c "copy exp_114, efficientnet_b3"
 
 
-# Final model
-# resnext50_32x4d, 5s
-# resnext50_32x4d, 5s, mixup
-# b0, 5s
-# b0, 5s, mixup
-# b3, 5s
-# b3, 5s, mixup
-# resnext50_32x4d, 7s, mixup
-# b0, 7s, mixup
-# b1, 7s, mixup
+############################
+# Final Model #
+############################
+## resnext50_32x4d, 5s, mixup
+# python -m experiments.exp_112 -m -c "copy exp_111, pink&water&speaking noise"
+
+## resnext50_32x4d, 7s, mixup
+
+
+## b0, 5s, mixup
+## b3, 5s, mixup
+
+## b0, 7s, mixup
+## b1, 7s, mixup
