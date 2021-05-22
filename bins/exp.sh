@@ -115,11 +115,17 @@ cd ../
 # python -m experiments.exp_111 -m -c "copy exp_110, snr"
 # python -m experiments.exp_112 -m -c "copy exp_111, pink&water&speaking noise"
 # python -m experiments.exp_113 -m -c "copy exp_112, epochs=60, T_max=20"
-python -m experiments.exp_114 -m -c "copy exp_112, 7sec"
-python -m experiments.exp_115 -m -c "copy exp_112, efficientnet_b0"
-python -m experiments.exp_116 -m -c "copy exp_114, efficientnet_b0"
-python -m experiments.exp_117 -m -c "copy exp_112, efficientnet_b3"
-python -m experiments.exp_118 -m -c "copy exp_114, efficientnet_b3"
+# python -m experiments.exp_114 -m -c "copy exp_112, 7sec"
+# python -m experiments.exp_115 -m -c "copy exp_112, efficientnet_b0"
+# python -m experiments.exp_116 -m -c "copy exp_114, efficientnet_b0"
+# python -m experiments.exp_117 -m -c "copy exp_112, efficientnet_b3"
+# python -m experiments.exp_118 -m -c "copy exp_114, efficientnet_b3"
+# python -m experiments.exp_119 -m -c "copy exp_112, r >= 0.9 then y = 0 ~ 5[sec] + random crop"
+# python -m experiments.exp_120 -m -c "copy exp_119, pos_weight"
+# python -m experiments.exp_121 -m -c "copy exp_119, SpecAugmentation"
+# python -m experiments.exp_122 -m -c "copy exp_119, efficientnet_b4"
+# python -m experiments.exp_123 -m -c "copy exp_119, efficientnet_b2"
+python -m experiments.exp_124 -m -c "copy exp_119, th=0.45"
 
 
 ############################
