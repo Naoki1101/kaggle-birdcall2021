@@ -125,20 +125,25 @@ cd ../
 # python -m experiments.exp_121 -m -c "copy exp_119, SpecAugmentation"
 # python -m experiments.exp_122 -m -c "copy exp_119, efficientnet_b4"
 # python -m experiments.exp_123 -m -c "copy exp_119, efficientnet_b2"
-python -m experiments.exp_124 -m -c "copy exp_119, th=0.45"
+# python -m experiments.exp_124 -m -c "copy exp_119, th=0.45"
+# python -m experiments.exp_125 -m -c "copy exp_121, add crowd noise"
+# python -m experiments.exp_126 -m -c "copy exp_121, add rain noise"
+# python -m experiments.exp_127 -m -c "copy exp_121, mixup=False"
+# python -m experiments.exp_128 -m -c "copy exp_121, change params of SpecAugmentation"
+python -m experiments.exp_129 -m -c "copy exp_121, GaussianBlur"
 
 
 ############################
 # Final Model #
 ############################
-## resnext50_32x4d, 5s, mixup
-# python -m experiments.exp_112 -m -c "copy exp_111, pink&water&speaking noise"
+## resnext50_32x4d, 5s, mixup, SpecAugmentation
+# python -m experiments.exp_121 -m -c "copy exp_119, SpecAugmentation"
 
-## resnext50_32x4d, 7s, mixup
+## resnext50_32x4d, 7s, mixup, , SpecAugmentation
 
 
-## b0, 5s, mixup
-## b3, 5s, mixup
+## efficientnet_b2, 5s, mixup, SpecAugmentation
+## efficientnet_b2, 7s, mixup, SpecAugmentation
 
-## b0, 7s, mixup
-## b1, 7s, mixup
+## efficientnet_b3, 5s, mixup, SpecAugmentation
+## efficientnet_b3, 7s, mixup, SpecAugmentation
