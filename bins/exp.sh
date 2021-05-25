@@ -130,14 +130,25 @@ cd ../
 # python -m experiments.exp_126 -m -c "copy exp_121, add rain noise"
 # python -m experiments.exp_127 -m -c "copy exp_121, mixup=False"
 # python -m experiments.exp_128 -m -c "copy exp_121, change params of SpecAugmentation"
-python -m experiments.exp_129 -m -c "copy exp_121, GaussianBlur"
+# python -m experiments.exp_129 -m -c "copy exp_121, GaussianBlur"
+# python -m experiments.exp_130 -m -c "copy exp_129, duplicate samples with less than 50 samples"
+# python -m experiments.exp_131 -m -c "copy exp_129, 7sec"
+# python -m experiments.exp_132 -m -c "copy exp_129, efficientnet_b2"
+# python -m experiments.exp_133 -m -c "copy exp_131, efficientnet_b2, 7sec"
+# python -m experiments.exp_134 -m -c "copy exp_129, efficientnet_b3"
+# python -m experiments.exp_135 -m -c "copy exp_131, efficientnet_b3, 7sec"
+# python -m experiments.exp_136 -m -c "copy exp_132, rm GaussianBlur"
+# python -m experiments.exp_137 -m -c "copy exp_133, rm GaussianBlur"   # 後回し
+# python -m experiments.exp_138 -m -c "copy exp_134, rm GaussianBlur"   # 後回し
+# python -m experiments.exp_139 -m -c "copy exp_135, rm GaussianBlur"   # 後回し
+# python -m experiments.exp_140 -m -c "copy exp_119, vit_base_resnet50d_224"   # 全く学習してくれない
 
 
 ############################
 # Final Model #
 ############################
 ## resnext50_32x4d, 5s, mixup, SpecAugmentation
-# python -m experiments.exp_121 -m -c "copy exp_119, SpecAugmentation"
+# python -m experiments.exp_129 -m -c "copy exp_121, GaussianBlur"
 
 ## resnext50_32x4d, 7s, mixup, , SpecAugmentation
 
