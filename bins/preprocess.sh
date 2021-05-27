@@ -3,7 +3,7 @@
 cd ../
 # python src/preprocess/01_resample.py
 # python src/preprocess/02_extract_soundscape_noise.py
-python src/preprocess/03_extract_freesound_noise.py
+# python src/preprocess/03_extract_freesound_noise.py
 # python src/preprocess/04_create_valid_position.py
 # python src/preprocess/05_extract_non_test_region_birds.py
 # python src/preprocess/06_extract_non_test_region.py
@@ -14,3 +14,4 @@ python src/preprocess/03_extract_freesound_noise.py
 # python src/preprocess/11_extract_non_south_america.py
 # python src/preprocess/012_create_pink_noise.py
 # python src/preprocess/013_extract_train_short_time.py
+python src/preprocess/14_extract_secondary_labels_num.py

@@ -138,23 +138,35 @@ cd ../
 # python -m experiments.exp_134 -m -c "copy exp_129, efficientnet_b3"
 # python -m experiments.exp_135 -m -c "copy exp_131, efficientnet_b3, 7sec"
 # python -m experiments.exp_136 -m -c "copy exp_132, rm GaussianBlur"
-# python -m experiments.exp_137 -m -c "copy exp_133, rm GaussianBlur"   # 後回し
-# python -m experiments.exp_138 -m -c "copy exp_134, rm GaussianBlur"   # 後回し
-# python -m experiments.exp_139 -m -c "copy exp_135, rm GaussianBlur"   # 後回し
+# python -m experiments.exp_137 -m -c "copy exp_133, rm GaussianBlur"
+# python -m experiments.exp_138 -m -c "copy exp_134, rm GaussianBlur"
+# python -m experiments.exp_139 -m -c "copy exp_135, rm GaussianBlur"
 # python -m experiments.exp_140 -m -c "copy exp_119, vit_base_resnet50d_224"   # 全く学習してくれない
+# python -m experiments.exp_141 -m -c "copy exp_129, resnest50d"
+
+# python -m experiments.exp_142 -m -c "copy exp_129, fix mixup"
+# python -m experiments.exp_143 -m -c "copy exp_142, rm GaussianBlur"
+# python -m experiments.exp_144 -m -c "copy exp_143, drop many_secondary_labels_idx"
+# python -m experiments.exp_145 -m -c "copy exp_144, rm SpecAugmentation"
+# python -m experiments.exp_146 -m -c "copy exp_144, 7sec"
+# python -m experiments.exp_147 -m -c "copy exp_144, change SpecAugmentation"
+python -m experiments.exp_148 -m -c "copy exp_147, 7sec"
 
 
 ############################
 # Final Model #
 ############################
+## resnext50_32x4d, 5s, SpecAugmentation
+## resnext50_32x4d, 7s, SpecAugmentation
 ## resnext50_32x4d, 5s, mixup, SpecAugmentation
-# python -m experiments.exp_129 -m -c "copy exp_121, GaussianBlur"
+## resnext50_32x4d, 7s, mixup, SpecAugmentation
 
-## resnext50_32x4d, 7s, mixup, , SpecAugmentation
-
-
+## efficientnet_b2, 5s, SpecAugmentation
+## efficientnet_b2, 7s, SpecAugmentation
 ## efficientnet_b2, 5s, mixup, SpecAugmentation
 ## efficientnet_b2, 7s, mixup, SpecAugmentation
 
+## efficientnet_b3, 5s, SpecAugmentation
+## efficientnet_b3, 7s, SpecAugmentation
 ## efficientnet_b3, 5s, mixup, SpecAugmentation
 ## efficientnet_b3, 7s, mixup, SpecAugmentation
