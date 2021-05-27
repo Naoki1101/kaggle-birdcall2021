@@ -150,7 +150,12 @@ cd ../
 # python -m experiments.exp_145 -m -c "copy exp_144, rm SpecAugmentation"
 # python -m experiments.exp_146 -m -c "copy exp_144, 7sec"
 # python -m experiments.exp_147 -m -c "copy exp_144, change SpecAugmentation"
-python -m experiments.exp_148 -m -c "copy exp_147, 7sec"
+# python -m experiments.exp_148 -m -c "copy exp_147, 7sec"
+python -m experiments.exp_149 -m -c "copy exp_144, efficientnet_b2"
+python -m experiments.exp_150 -m -c "copy exp_144, efficientnet_b3"
+python -m experiments.exp_151 -m -c "copy exp_144, rm mixup"
+python -m experiments.exp_152 -m -c "copy exp_149, rm mixup"
+python -m experiments.exp_153 -m -c "copy exp_150, rm mixup"
 
 
 ############################

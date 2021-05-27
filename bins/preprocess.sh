@@ -12,6 +12,6 @@ cd ../
 # python src/preprocess/09_drop_low_rating.py
 # python src/preprocess/10_extract_non_north_america.py
 # python src/preprocess/11_extract_non_south_america.py
-# python src/preprocess/012_create_pink_noise.py
-# python src/preprocess/013_extract_train_short_time.py
+# python src/preprocess/12_create_pink_noise.py
+# python src/preprocess/13_extract_train_short_time.py
 python src/preprocess/14_extract_secondary_labels_num.py
