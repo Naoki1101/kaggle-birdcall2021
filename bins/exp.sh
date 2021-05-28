@@ -167,16 +167,39 @@ python -m experiments.exp_158 -m -c "copy exp_155, rm mixup"
 # Final Model #
 ############################
 ## resnext50_32x4d, 5s, SpecAugmentation
+# python -m experiments.exp_151 -m -c "copy exp_144, rm mixup"
+
 ## resnext50_32x4d, 7s, SpecAugmentation
+# python -m experiments.exp_156 -m -c "copy exp_146, rm mixup"
+
 ## resnext50_32x4d, 5s, mixup, SpecAugmentation
+# python -m experiments.exp_144 -m -c "copy exp_143, drop many_secondary_labels_idx"
+
 ## resnext50_32x4d, 7s, mixup, SpecAugmentation
+# python -m experiments.exp_146 -m -c "copy exp_144, 7sec"
+
 
 ## efficientnet_b2, 5s, SpecAugmentation
+# # python -m experiments.exp_152 -m -c "copy exp_149, rm mixup"
+
 ## efficientnet_b2, 7s, SpecAugmentation
+# python -m experiments.exp_157 -m -c "copy exp_154, rm mixup"
+
 ## efficientnet_b2, 5s, mixup, SpecAugmentation
+# python -m experiments.exp_149 -m -c "copy exp_144, efficientnet_b2"
+
 ## efficientnet_b2, 7s, mixup, SpecAugmentation
+# python -m experiments.exp_154 -m -c "copy exp_146, efficientnet_b2"
+
 
 ## efficientnet_b3, 5s, SpecAugmentation
+# # python -m experiments.exp_153 -m -c "copy exp_150, rm mixup"
+
 ## efficientnet_b3, 7s, SpecAugmentation
+# python -m experiments.exp_158 -m -c "copy exp_155, rm mixup"
+
 ## efficientnet_b3, 5s, mixup, SpecAugmentation
+# python -m experiments.exp_150 -m -c "copy exp_144, efficientnet_b3"
+
 ## efficientnet_b3, 7s, mixup, SpecAugmentation
+# python -m experiments.exp_155 -m -c "copy exp_146, efficientnet_b3"
