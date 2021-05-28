@@ -156,11 +156,14 @@ cd ../
 # python -m experiments.exp_151 -m -c "copy exp_144, rm mixup"
 # python -m experiments.exp_152 -m -c "copy exp_149, rm mixup"
 # python -m experiments.exp_153 -m -c "copy exp_150, rm mixup"
-python -m experiments.exp_154 -m -c "copy exp_146, efficientnet_b2"
-python -m experiments.exp_155 -m -c "copy exp_146, efficientnet_b3"
-python -m experiments.exp_156 -m -c "copy exp_146, rm mixup"
-python -m experiments.exp_157 -m -c "copy exp_154, rm mixup"
-python -m experiments.exp_158 -m -c "copy exp_155, rm mixup"
+# python -m experiments.exp_154 -m -c "copy exp_146, efficientnet_b2"
+# python -m experiments.exp_155 -m -c "copy exp_146, efficientnet_b3"
+# python -m experiments.exp_156 -m -c "copy exp_146, rm mixup"
+# python -m experiments.exp_157 -m -c "copy exp_154, rm mixup"
+# python -m experiments.exp_158 -m -c "copy exp_155, rm mixup"
+python -m experiments.exp_159 -m -c "copy exp_143, secondary_labels = 0.3"
+python -m experiments.exp_160 -m -c "copy exp_159, efficientnet_b2"
+python -m experiments.exp_161 -m -c "copy exp_159, efficientnet_b3"
 
 
 ############################
