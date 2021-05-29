@@ -167,9 +167,14 @@ cd ../
 
 # python -m experiments.exp_162 -m -c "copy exp_159, Save weight every time CV is improved, minmax"
 # python -m experiments.exp_163 -m -c "copy exp_162, BN"
-python -m experiments.exp_164 -m -c "copy exp_163, rm mixup"
-python -m experiments.exp_165 -m -c "copy exp_163, 7sec"
-python -m experiments.exp_166 -m -c "copy exp_165, rm mixup"
+# python -m experiments.exp_164 -m -c "copy exp_163, rm mixup"
+# python -m experiments.exp_165 -m -c "copy exp_163, 7sec"
+# python -m experiments.exp_166 -m -c "copy exp_165, rm mixup"
+
+python -m experiments.exp_167 -m -c "copy exp_163, efficientnet_b3"
+python -m experiments.exp_168 -m -c "copy exp_164, efficientnet_b3"
+python -m experiments.exp_169 -m -c "copy exp_165, efficientnet_b3"
+python -m experiments.exp_170 -m -c "copy exp_166, efficientnet_b3"
 
 # python -m experiments.exp_999 -m -c "test"
 
