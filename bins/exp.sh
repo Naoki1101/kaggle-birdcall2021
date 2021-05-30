@@ -174,10 +174,13 @@ cd ../
 # python -m experiments.exp_168 -m -c "copy exp_164, efficientnet_b3"
 # python -m experiments.exp_169 -m -c "copy exp_165, efficientnet_b3"
 # python -m experiments.exp_170 -m -c "copy exp_166, efficientnet_b3"
-python -m experiments.exp_171 -m -c "copy exp_167, efficientnet_b2"
-python -m experiments.exp_172 -m -c "copy exp_168, efficientnet_b2"
-python -m experiments.exp_173 -m -c "copy exp_169, efficientnet_b2"
-python -m experiments.exp_174 -m -c "copy exp_170, efficientnet_b2"
+# python -m experiments.exp_171 -m -c "copy exp_167, efficientnet_b2"
+# python -m experiments.exp_172 -m -c "copy exp_168, efficientnet_b2"
+# python -m experiments.exp_173 -m -c "copy exp_169, efficientnet_b2"
+# python -m experiments.exp_174 -m -c "copy exp_170, efficientnet_b2"
+# python -m experiments.exp_175 -m -c "copy exp_164, optim threshhold every epoch"
+# python -m experiments.exp_176 -m -c "copy exp_099, fix bug, pink&water&speaking noise, use rms"
+python -m experiments.exp_177 -m -c "copy exp_163, epochs=50"
 
 # python -m experiments.exp_999 -m -c "test"
 
