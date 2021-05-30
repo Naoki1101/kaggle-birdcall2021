@@ -180,7 +180,12 @@ cd ../
 # python -m experiments.exp_174 -m -c "copy exp_170, efficientnet_b2"
 # python -m experiments.exp_175 -m -c "copy exp_164, optim threshhold every epoch"
 # python -m experiments.exp_176 -m -c "copy exp_099, fix bug, pink&water&speaking noise, use rms"
-python -m experiments.exp_177 -m -c "copy exp_163, epochs=50"
+# python -m experiments.exp_177 -m -c "copy exp_163, epochs=50"
+# python -m experiments.exp_178 -m -c "copy exp_165, epochs=50"
+# python -m experiments.exp_179 -m -c "copy exp_167, epochs=50"
+# python -m experiments.exp_180 -m -c "copy exp_169, epochs=50"
+# python -m experiments.exp_181 -m -c "copy exp_171, epochs=50"
+python -m experiments.exp_182 -m -c "copy exp_173, epochs=50"
 
 # python -m experiments.exp_999 -m -c "test"
 
