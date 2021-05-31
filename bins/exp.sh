@@ -185,7 +185,12 @@ cd ../
 # python -m experiments.exp_179 -m -c "copy exp_167, epochs=50"
 # python -m experiments.exp_180 -m -c "copy exp_169, epochs=50"
 # python -m experiments.exp_181 -m -c "copy exp_171, epochs=50"
-python -m experiments.exp_182 -m -c "copy exp_173, epochs=50"
+# python -m experiments.exp_182 -m -c "copy exp_173, epochs=50"
+# python -m experiments.exp_183 -m -c "copy exp_165, efficientnetv2_s"   # 3epochまで学習してくれないからskip
+# python -m experiments.exp_184 -m -c "copy exp_165, tf_efficientnetv2_b3"
+python -m experiments.exp_185 -m -c "copy exp_163, tf_efficientnetv2_b3"
+python -m experiments.exp_186 -m -c "copy exp_164, tf_efficientnetv2_b3"
+python -m experiments.exp_187 -m -c "copy exp_166, tf_efficientnetv2_b3"
 
 # python -m experiments.exp_999 -m -c "test"
 
