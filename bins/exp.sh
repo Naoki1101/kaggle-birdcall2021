@@ -191,10 +191,11 @@ cd ../
 # python -m experiments.exp_185 -m -c "copy exp_163, tf_efficientnetv2_b3"
 # python -m experiments.exp_186 -m -c "copy exp_164, tf_efficientnetv2_b3"
 # python -m experiments.exp_187 -m -c "copy exp_166, tf_efficientnetv2_b3"
-python -m experiments.exp_188 -m -c "copy exp_184, tf_efficientnetv2_b2"
-python -m experiments.exp_189 -m -c "copy exp_185, tf_efficientnetv2_b2"
-python -m experiments.exp_190 -m -c "copy exp_186, tf_efficientnetv2_b2"
-python -m experiments.exp_191 -m -c "copy exp_187, tf_efficientnetv2_b2"
+# python -m experiments.exp_188 -m -c "copy exp_184, tf_efficientnetv2_b2"
+# python -m experiments.exp_189 -m -c "copy exp_185, tf_efficientnetv2_b2"
+# python -m experiments.exp_190 -m -c "copy exp_186, tf_efficientnetv2_b2"
+# python -m experiments.exp_191 -m -c "copy exp_187, tf_efficientnetv2_b2"
+python -m experiments.exp_192 -m -c "copy exp_165, 8sec"
 
 # python -m experiments.exp_999 -m -c "test"
 
