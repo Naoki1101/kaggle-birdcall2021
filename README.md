@@ -5,6 +5,8 @@
 - Public LB: 15th (0.77)
 - Private LB: 44th (0.63) 🥈
 
+<br>
+<br>
 
 ## Docker
 1. Building a new image
@@ -14,16 +16,21 @@ $ cd docker-python
 
 sudo ./build --gpu
 ```
+<br>
 
 2. Running the image
 ```
 $ docker run -itd --gpus all -p 8888:8888  --shm-size=32gb  -v $PWD:/working -w /working --rm --name kaggle-gpu  -h host  kaggle/python-gpu-build /bin/bash
 ```
+<br>
 
 3. Running container
 ```
 $ docker exec -it kaggle-gpu /bin/bash
 ```
+
+<br>
+<br>
 
 ## Setting
 1. Overwrite credentials
@@ -36,6 +43,9 @@ export KAGGLE_KEY={KEY}
 ```
 /bin/bash setup.sh
 ```
+
+<br>
+<br>
 
 ## Model Training
 1. Preprocess
