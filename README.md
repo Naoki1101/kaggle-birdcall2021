@@ -1,4 +1,10 @@
-# BirdCLEF 2021 - Birdcall Identification
+# kaggle-birdcall2021
+
+44th place solution to [BirdCLEF 2021 - Birdcall Identification](https://www.kaggle.com/c/birdclef-2021)
+
+Public LB: 15th (0.77)
+Private LB: 44th (0.63) 🥈
+
 
 ## Docker
 1. Building a new image
@@ -18,7 +24,6 @@ $ docker run -itd --gpus all -p 8888:8888  --shm-size=32gb  -v $PWD:/working -w 
 ```
 $ docker exec -it kaggle-gpu /bin/bash
 ```
-
 
 ## Setting
 1. Overwrite credentials
@@ -42,5 +47,5 @@ cd bins
 2. Training
 ```
 /bin/bash exp.sh
-```cd bins
+```
 
