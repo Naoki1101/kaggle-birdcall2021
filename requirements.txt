@@ -1,0 +1,7 @@
+audiomentations
+easydict
+iterative-stratification
+kaggle
+notion
+timm
+torchlibrosa
