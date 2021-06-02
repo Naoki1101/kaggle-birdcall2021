@@ -16,13 +16,11 @@ $ cd docker-python
 
 sudo ./build --gpu
 ```
-<br>
 
 2. Running the image
 ```
 $ docker run -itd --gpus all -p 8888:8888  --shm-size=32gb  -v $PWD:/working -w /working --rm --name kaggle-gpu  -h host  kaggle/python-gpu-build /bin/bash
 ```
-<br>
 
 3. Running container
 ```
