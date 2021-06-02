@@ -2,8 +2,8 @@
 
 44th place solution to [BirdCLEF 2021 - Birdcall Identification](https://www.kaggle.com/c/birdclef-2021)
 
-Public LB: 15th (0.77)
-Private LB: 44th (0.63) 🥈
+- Public LB: 15th (0.77)
+- Private LB: 44th (0.63) 🥈
 
 
 ## Docker
