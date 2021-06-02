@@ -13,8 +13,8 @@ pip install -r requirements.txt
 ## kaggle api
 touch ~/.kaggle/kaggle.json
 chmod 600 ~/.kaggle/kaggle.json
-export KAGGLE_USERNAME=xxxxxxxxxxxxxx
-export KAGGLE_KEY=xxxxxxxxxxxxxx
+export KAGGLE_USERNAME=xxxxxxxxxxxxx
+export KAGGLE_KEY=xxxxxxxxxxxxx
 
 
 # download birdsong-recognition
