@@ -175,8 +175,8 @@ class CustomValidDataset(Dataset):
         else:
             y = self.audio_dict[filename]
 
-        start_index = const.TARGET_SAMPLE_RATE * max(0, seconds - 6.5)
-        end_index = const.TARGET_SAMPLE_RATE * min(600, seconds + 1.5)
+        start_index = int(const.TARGET_SAMPLE_RATE * max(0, seconds - 6.5))
+        end_index = int(const.TARGET_SAMPLE_RATE * min(600, seconds + 1.5))
         y = y[start_index:end_index].astype(np.float32)
         y = self._padding(y, const.TARGET_SAMPLE_RATE * 8)
 
