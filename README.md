@@ -39,6 +39,7 @@ export KAGGLE_KEY={KEY}
 
 2. Setting configs/notify.yml and account.yml
 - account.yml
+    - https://neptune.ai/
 ```
 neptune:
     token: {YOUR TOKEN}
