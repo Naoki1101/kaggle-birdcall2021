@@ -1,9 +1,9 @@
 # kaggle-birdcall2021
 
-44th place solution to [BirdCLEF 2021 - Birdcall Identification](https://www.kaggle.com/c/birdclef-2021)
+42th place solution to [BirdCLEF 2021 - Birdcall Identification](https://www.kaggle.com/c/birdclef-2021)
 
 - Public LB: 15th (0.77)
-- Private LB: 44th (0.63) 🥈
+- Private LB: 42th (0.63) 🥈
 
 <br>
 <br>
@@ -37,7 +37,23 @@ export KAGGLE_USERNAME={USERNAME}
 export KAGGLE_KEY={KEY}
 ```
 
-2. Run
+2. Setting configs/notify.yml and account.yml
+- account.yml
+```
+neptune:
+    token: {YOUR TOKEN}
+    project: {PROJECT NAME}
+```
+- notify.yml
+```
+line:
+    token: {YOUR TOKEN}
+notion:
+    token: {YOUR TOKEN}
+    url: {YOUR URL}
+```
+
+3. Run
 ```
 /bin/bash setup.sh
 ```
